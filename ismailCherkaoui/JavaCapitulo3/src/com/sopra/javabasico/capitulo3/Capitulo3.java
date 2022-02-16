@@ -12,10 +12,24 @@ import java.util.Random;
 public class Capitulo3 {
 	
 	Random random = new Random(9);
-	private double numero = 7.7;
-	private boolean bool = true;
+	private double numero;
+	private boolean bool;
 	private static String cadena = "Esto es un String";
 	private static String cadena2 = "Buenas";
+	
+	/**
+	 * Constructor de la clase Capitulo3
+	 * @param random
+	 * @param numero
+	 * @param bool
+	 */
+	
+	public Capitulo3(Random random, double numero, boolean bool) {
+		this.random = random;
+		this.numero = numero;
+		this.bool = bool;
+	}
+	
 	
 	/**
 	 * 
