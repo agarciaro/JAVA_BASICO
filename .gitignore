@@ -26,6 +26,14 @@ prueba01/.classpath
 *.prefs
 .DS_Store
 /.metadata/
+
 Cristina/JavaCapitulo3/.classpath
 Cristina/JavaCapitulo3/.project
 Cristina/JavaCapitulo3/src/com/sopra/javabasico/capitulo3/package-info.java
+
+.project
+
+marco_rueda/JavaCapitulo3/.classpath
+Guillermo/JavaCapitulo3/.classpath
+Gabriel/JavaCapitulo3/.classpath
+
