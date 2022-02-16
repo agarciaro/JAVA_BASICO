@@ -27,6 +27,9 @@ prueba01/.classpath
 .DS_Store
 /.metadata/
 .project
+<<<<<<< HEAD
 rjuve/JavaCapitulo3/.classpath
+=======
 Guillermo/JavaCapitulo3/.classpath
 Gabriel/JavaCapitulo3/.classpath
+>>>>>>> c7dde013627d16e6728fc056a445b28e84a14fce
