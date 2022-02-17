@@ -8,7 +8,7 @@ public class Ejercicio02 {
 			System.out.println(arg);
 		}
 		
-		for(int i = 0; i < args.length; i++) {
+		for(int i = 0; args != null && i < args.length; i++) {
 			System.out.println(args[i]);
 		}
 		
@@ -16,6 +16,10 @@ public class Ejercicio02 {
 		r.setLado1(3);
 		r.setLado2(2);
 		System.out.println(r.getArea());
+		
+		float numf = 3.9f;
+		System.out.println((numf > 0.0f)?numf:-numf);
+		
 	}
 	
 }
