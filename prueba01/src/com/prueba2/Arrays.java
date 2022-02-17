@@ -25,7 +25,7 @@ public class Arrays {
 		for (int i : numbers) {
 			System.out.print(i + " ");
 		}
-		System.out.printf("\n%d es mayor a %d\n", 4, 1);
+		System.out.printf("\n%d es mayor a %d %s\n", 4, 1, "hola");
 
 		System.out.println(java.util.Arrays.binarySearch(numbers, 5));
 		
