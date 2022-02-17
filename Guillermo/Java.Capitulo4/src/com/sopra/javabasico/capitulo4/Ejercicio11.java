@@ -9,6 +9,6 @@ public class Ejercicio11 {
 		System.out.print("Introduzca el número:\t");
 		float f = sc.nextFloat();
 //		System.out.println(Math.abs(f));
-		System.out.println(f>0?f:-f);
+		System.out.println(f>0?f:-f);//Operador ternario
 	}
 }

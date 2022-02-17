@@ -9,19 +9,18 @@ public class Ejercicio12 {
 		Scanner sc = new Scanner(System.in);
 		Random r = new Random();
 		int jugadaMaquina = 0;
-		System.out.print("Este programa juega a Piedra, papel o tijera. Sintroduce el comando deseado en el menu.\n\n");
+		System.out.print("Este programa juega a Piedra, papel o tijera. Sintroduce el comando deseado en el menu.\n\n");//Reglas
 		boolean flag = true;
-		StringBuilder sb = new StringBuilder();
+		StringBuilder humanElection = new StringBuilder();
 		do {
 			System.out.print("\n---------------------------------------------------------\n\n"
-					+ "Menu:\n1.-Piedra: P\n2.-Papel: L\n3.-Tijeras: T\nSalir: S\n\nElección:\t");
+					+ "Menu:\n1.-Piedra: P\n2.-Papel: L\n3.-Tijeras: T\nSalir: S\n\nElección:\t");//Menu
 			jugadaMaquina = r.nextInt(3);
-			sb.delete(0, sb.length());
-			sb.append(sc.nextLine());
+			humanElection.delete(0, humanElection.length());//Limpiar al inicio del bucle
+			humanElection.append(sc.nextLine());//Eleccion
 			System.out.println();
-			sb.trimToSize();
-			String p = sb.toString().toUpperCase();
-			switch (p) {
+			humanElection.trimToSize();
+			switch (humanElection.toString().toUpperCase()) {
 			case "P":
 				resulGame(0, jugadaMaquina);
 				break;
@@ -43,7 +42,7 @@ public class Ejercicio12 {
 
 	}
 
-	public static void resulGame(int elec, int jug) {
+	public static void resulGame(int elec, int jug) {//Quien gana? 0 Piedra, 1 Papel, 2 Tijeras
 		System.out.println("Tú: "+ stringJugada(elec) + "\nMáquina: " + stringJugada(jug));
 		if (elec == 0 && jug == 2) {
 			System.out.println("\nVICTORIA!\n");
@@ -58,7 +57,7 @@ public class Ejercicio12 {
 		}
 	}
 
-	public static String stringJugada(int jug) {
+	public static String stringJugada(int jug) {//Ayuda para escribir
 		switch (jug) {
 		case 0:
 			return "Piedras";

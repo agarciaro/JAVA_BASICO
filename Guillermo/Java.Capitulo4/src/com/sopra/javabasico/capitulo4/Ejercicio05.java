@@ -7,7 +7,7 @@ public class Ejercicio05 {
 			System.out.println("No se han recivido argumentos");
 		} else {
 			System.out.println("Se han recivido " + args.length + " argumentos, que son:");
-			for (String string : args) {
+			for (String string : args) {//foreach
 				System.out.print(string + " ");
 			}
 		}
