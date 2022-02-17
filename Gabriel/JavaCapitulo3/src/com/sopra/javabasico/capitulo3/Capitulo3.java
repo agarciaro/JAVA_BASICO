@@ -12,24 +12,23 @@ import java.util.Random; //Si se usa java.util.* se importa toda la librería de 
 public class Capitulo3 { // 2
 
 	/*
-	{
-		System.out.println("Inicializador de instancia del principio: " + num); // 9
-	}*/ 
+	 * { System.out.println("Inicializador de instancia del principio: " + num); //
+	 * 9 }
+	 */
 	// No se puede acceder a num antes de que sea declarada
 
 	// 7
 	// Variables de clase
 	private static String s1 = "Esto es un String";
 	private static String s2;
-		
+
 	private int num;
 	private boolean flag;
 	private Random rand;
-	
 
 	// 8
 	/**
-	 * Constructor de la  clase Capitulo3
+	 * Constructor de la clase Capitulo3
 	 */
 	public Capitulo3() {
 		num = 2;
@@ -54,7 +53,8 @@ public class Capitulo3 { // 2
 	}
 
 	/**
-	 * Constructor de la  clase Capitulo3
+	 * Constructor de la clase Capitulo3
+	 * 
 	 * @param n numero
 	 * @param b booleano
 	 */
@@ -67,6 +67,34 @@ public class Capitulo3 { // 2
 		int local = 12; // No se puede acceder desde fuera del constructor
 	}
 
+	public static int buscar(int[] vec, int num) {
+		int index = -1;
+
+		int izq = 0;
+		int der = vec.length - 1;
+		int mitad = izq + ((der - izq) / 2);
+		boolean encontrado = false;
+
+		while (izq <= der && !encontrado) {
+			if (vec[mitad] < num) {
+				izq = mitad + 1;
+			} else if (vec[mitad] == num) {
+				System.out.println("Encontrado");
+				index = mitad;
+				encontrado = true;
+			} else {
+				der = mitad - 1;
+			}
+			mitad = (izq + der) / 2;
+		}
+
+		if (izq > der) {
+			System.out.println("No encontrado");
+		}
+
+		return index;
+	}
+
 	/**
 	 * 
 	 * @param args Argumentos de entrada
@@ -77,7 +105,7 @@ public class Capitulo3 { // 2
 		System.out.println("Estoy aprendiendo a programar en java");
 
 		// 5
-		if(args.length != 0)
+		if (args.length != 0)
 			System.out.println("Me has mandado el texto: " + args[0]);
 
 		// 6
@@ -101,15 +129,21 @@ public class Capitulo3 { // 2
 
 		cap1 = null;
 		cap2 = null;
-		
+
 		System.gc();
-		
+
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+		// Buscar en vector
+
+		int[] vector = { 3, 4, 5, 6, 7, 8 };
+
+		System.out.println(Capitulo3.buscar(vector, 5));
 
 	}
 
