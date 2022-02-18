@@ -6,8 +6,8 @@ public class Operadores {
 		Integer x = 0, y = 0;
 //		double x = 3 + 2 * --y;
 
-		int a = 2 * 5 + 3 * 4 - 8;
-		int b = 2 * ((5 + 3) * 4 - 8);
+//		int a = 2 * 5 + 3 * 4 - 8;
+//		int b = 2 * ((5 + 3) * 4 - 8);
 		
 //		System.out.println(x.getClass());
 		int xx = 3;

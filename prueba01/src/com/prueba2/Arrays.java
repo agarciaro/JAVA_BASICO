@@ -56,6 +56,12 @@ public class Arrays {
 		
 		Collections.sort(list);
 		System.out.println(list);
+		
+		final List<Integer> lista = new ArrayList<>();
+		lista.add(2);
+		List<Integer> lista2 = new ArrayList<>();
+//		lista = lista2;
+		
 	}
 
 	public static void varargs1(String[] args) {
