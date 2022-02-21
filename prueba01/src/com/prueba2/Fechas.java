@@ -57,7 +57,7 @@ public class Fechas {
 		
 //		DateTimeFormatter f = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
 //		System.out.println(LocalDateTime.now().format(f));
-		
+
 		DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
 		LocalDate date = LocalDate.parse("02 17 2022", f);
 		System.out.println(date);
