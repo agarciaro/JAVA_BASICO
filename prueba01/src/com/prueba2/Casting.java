@@ -1,7 +1,5 @@
 package com.prueba2;
 
-import java.io.File;
-
 public class Casting {
 
 	public static void main(String[] args) {

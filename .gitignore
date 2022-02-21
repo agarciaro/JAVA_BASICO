@@ -21,42 +21,11 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-prueba01/.project
-prueba01/.classpath
 *.prefs
 .DS_Store
 /.metadata/
 
-Cristina/JavaCapitulo3/.classpath
-Cristina/JavaCapitulo3/.project
-Cristina/JavaCapitulo3/src/com/sopra/javabasico/capitulo3/package-info.java
-
 .project
 .classpath
 
-rjuve/JavaCapitulo3/.classpath
-marco_rueda/JavaCapitulo3/.classpath
-Guillermo/JavaCapitulo3/.classpath
-Gabriel/JavaCapitulo3/.classpath
-
-JavierRaposoSanchez/JavaCapitulo3/.classpath
-JavierRaposoSanchez/.classpath
-
-Alejandro_Valverde/JavaCapitulo3/.classpath
-JavierRaposoSanchez/src/com/sopra/javabasico/capitulo3/.classpath
-JavierRaposoSanchez/src/com/sopra/javabasico/capitulo3/Capitulo3.java
-JavierRaposoSanchez/src/com/sopra/javabasico/capitulo3/Capitulo3.java
-ismailCherkaoui/Algoritmo/.classpath
-bin/.gitignore.bak
-bin/Alejandro_Valverde/Alejandro.txt
-bin/Gabriel/Gabriel.txt
-bin/Cristina/Cristina.txt.txt
-bin/rjuve/Importante.txt
-bin/Raul/Raul.txt.txt
-bin/Raul/Projectjava03/.classpath
-bin/Oscar/OscarPrueba.txt
-bin/Nico_Lascaux/Prueba.txt
-bin/marco_rueda/marco_rueda copia.txt
-bin/ismailCherkaoui/JavaCapitulo3/.classpath
-bin/hajarAkacha/creacionFicher.txt
-bin/Guillermo/Guille.txt
+bin/

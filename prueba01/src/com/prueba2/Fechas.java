@@ -1,12 +1,7 @@
 package com.prueba2;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Month;
-import java.time.Period;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
-import java.util.Date;
 
 public class Fechas {
 
@@ -62,7 +57,7 @@ public class Fechas {
 		
 //		DateTimeFormatter f = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
 //		System.out.println(LocalDateTime.now().format(f));
-		
+
 		DateTimeFormatter f = DateTimeFormatter.ofPattern("MM dd yyyy");
 		LocalDate date = LocalDate.parse("02 17 2022", f);
 		System.out.println(date);
