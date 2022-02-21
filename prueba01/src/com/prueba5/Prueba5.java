@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.List;import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import sun.net.www.content.text.plain;
+
 
 public class Prueba5 {
 
@@ -43,10 +45,10 @@ public class Prueba5 {
 //							.setEdad(8)
 //							.setApellidos("Garcia");
 		
-		List<Animal> listaAnimales = new ArrayList<>();
-		listaAnimales.add(new Animal("cebra", true, true));
-		listaAnimales.add(new Animal("ñu", true, true));
-		listaAnimales.add(new Animal("cocodrilo", false, true));
+//		List<Animal> listaAnimales = new ArrayList<>();
+//		listaAnimales.add(new Animal("cebra", true, true));
+//		listaAnimales.add(new Animal("ñu", true, true));
+//		listaAnimales.add(new Animal("cocodrilo", false, true));
 		
 //		listCannotHop(listaAnimales);
 		
@@ -62,11 +64,11 @@ public class Prueba5 {
 //			}
 //		});
 		
-		List<Animal> listaCannotHop =  listaAnimales.stream().filter(animal -> !animal.canHop()).collect(Collectors.toList());;
-		
-		for (Animal animal2 : listaCannotHop) {
-			System.out.println(animal2);
-		}
+//		List<Animal> listaCannotHop =  listaAnimales.stream().filter(animal -> !animal.canHop()).collect(Collectors.toList());;
+//		
+//		for (Animal animal2 : listaCannotHop) {
+//			System.out.println(animal2);
+//		}
 		
 		
 //		boolean puedeSaltar = true;
@@ -74,27 +76,54 @@ public class Prueba5 {
 		// (a, b) -> {int a = 5; return 0;}
 		
 		
-		List<Float> precios = Arrays.asList(1.20f, 4.55f, 6f, 3f);
-		List<Float> preciosMasIVA;
-		List<Float> paresIncrementoImparesDecremento;
+//		List<Float> precios = Arrays.asList(1.20f, 4.55f, 6f, 3f);
+//		List<Float> preciosMasIVA;
+//		List<Float> paresIncrementoImparesDecremento;
+//		
+//		preciosMasIVA = precios.stream().map(p -> (float) p * 1.25f).collect(Collectors.toList());
+//		System.out.println(preciosMasIVA);
+//		
+//		paresIncrementoImparesDecremento = precios.stream().map((Float p) -> p % 2 == 0?p*1.25f:p*0.75f).collect(Collectors.toList());
+//		System.out.println(paresIncrementoImparesDecremento);
+//		new ClaseEnUnFichero();
 		
-		preciosMasIVA = precios.stream().map(p -> (float) p * 1.25f).collect(Collectors.toList());
-		System.out.println(preciosMasIVA);
+//		Perro perro = new Perro(false, "PERRO", true, true);
+//		perro.canHop();
+//		Perro.comer();
+//		
+//		
+//		Animal animal = (Animal) perro;
+//		animal.canHop();
+//		Animal.comer();
+//		
+//		System.out.println(animal.getClass());
+//		
+//		Animal a = new Animal();
+//		System.out.println(a.getClass());
 		
-		paresIncrementoImparesDecremento = precios.stream().map((Float p) -> p % 2 == 0?p*1.25f:p*0.75f).collect(Collectors.toList());
-		System.out.println(paresIncrementoImparesDecremento);
+//		Perro p = new Perro();
+//		System.out.println(p.getCanBark());
+		
+//		ClaseAbstracta c = new ClaseAbstracta();
+		
 	}
 	
-	public static void listCannotHop(List<Animal> lista) {
-		for (Animal animal : lista) {
-			if(animal.canHop() == false) {
-				System.out.println(animal);
-			}
-		}
-	}
+//	public static void listCannotHop(List<Animal> lista) {
+//		for (Animal animal : lista) {
+//			if(animal.canHop() == false) {
+//				System.out.println(animal);
+//			}
+//		}
+//	}
 	
 	// () -> true
 	// a -> a.cannotHop()
 	// (Animal a) -> {return a.cannotHop();}
 	//(String a, String b) -> a.startsWith("start") && b.endsWith("end")
+	
+	
 }
+
+//class ClaseEnUnFichero{
+//	
+//}
