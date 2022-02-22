@@ -106,6 +106,13 @@ public class Prueba5 {
 		
 //		ClaseAbstracta c = new ClaseAbstracta();
 		
+//		Animal animal = new Animal();
+//		if(animal instanceof Perro) {
+//			Perro perro = (Perro) animal;
+//			System.out.println("ENTRO");
+//		}
+			
+		
 	}
 	
 //	public static void listCannotHop(List<Animal> lista) {
