@@ -1,6 +1,6 @@
 package com.prueba5;
 
-public class Persona {
+public class Persona implements Comparable<Persona>{
 
 	private String nombre, apellidos;
 	private int edad = 20;
@@ -78,6 +78,12 @@ public class Persona {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
+	}
+
+	@Override
+	public int compareTo(Persona p) { //Si el número de retorno es positivo es mayor si es 0 es igual si es negativo es menor
+		return this.edad - p.edad;
+		
 	}
 
 }
