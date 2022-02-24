@@ -29,3 +29,7 @@ hs_err_pid*
 .classpath
 
 bin/
+*.jar
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.properties
+*.jar
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
