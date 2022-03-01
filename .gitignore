@@ -28,7 +28,7 @@ hs_err_pid*
 .project
 .classpath
 
-bin/
+
 marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
 *.xml
 *.properties
@@ -36,3 +36,14 @@ marco_rueda/PruebaBasedeDatos/mvnw
 *.jar
 *.jar
 marco_rueda/PruebaBasedeDatos/mvnw.cmd
+
+*.jar
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.properties
+*.jar
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
+inyeccion-dependencias-spring/mvnw
+*.jar
+inyeccion-dependencias-spring/.mvn/wrapper/maven-wrapper.properties
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
+

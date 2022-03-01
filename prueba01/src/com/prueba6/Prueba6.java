@@ -1,7 +1,7 @@
 package com.prueba6;
 
 public class Prueba6 {
-
+	
 	public static void main(String[] args) throws NoEsVacioException, EsVacioException {
 //		ReproductorDisco disco = new ReproductorDisco();//KAKA
 //		ReproductorMP3 mp3 = new ReproductorMP3();//KAKA
@@ -9,7 +9,12 @@ public class Prueba6 {
 //		ReproductorMusica rDisco = new ReproductorDisco();
 //		ReproductorMusica rMP3 = new ReproductorMP3();
 		
+		Object o = new Integer(5);
+		String s = (String) o ;
+		System.out.println(s);
+		
 		String palabra = "asds";
+		
 		
 //		try {
 //			palabra = "OK";
@@ -60,6 +65,10 @@ public class Prueba6 {
 		}else {
 			throw new EsVacioException("VACIO");
 		}
+	}
+	
+	public static EsVacioException metodo() throws RuntimeException{
+		return new EsVacioException("");
 	}
 
 }
