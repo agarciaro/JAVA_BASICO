@@ -34,3 +34,7 @@ pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.properties
 *.jar
 pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
 pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
+inyeccion-dependencias-spring/mvnw
+*.jar
+inyeccion-dependencias-spring/.mvn/wrapper/maven-wrapper.properties
+pruebaBaseDeDatos/.mvn/wrapper/maven-wrapper.jar
