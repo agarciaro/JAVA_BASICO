@@ -29,3 +29,10 @@ hs_err_pid*
 .classpath
 
 bin/
+marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
+*.xml
+*.properties
+marco_rueda/PruebaBasedeDatos/mvnw
+*.jar
+*.jar
+marco_rueda/PruebaBasedeDatos/mvnw.cmd
