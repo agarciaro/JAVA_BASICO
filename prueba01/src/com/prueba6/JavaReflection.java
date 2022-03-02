@@ -2,13 +2,14 @@ package com.prueba6;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
 public class JavaReflection {
 	
 	public static final String NOMBRE_CLASE = "com.prueba6.ReproductorDisco";
 	
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
 		Cancion cancion = new Cancion();
 		System.out.println(cancion.getClass());
 		
@@ -33,6 +34,6 @@ public class JavaReflection {
 //		System.out.println(cancionPorReflexion.getTitulo());
 		
 		ReproductorMusica reproductor = (ReproductorMusica) constructores[0].newInstance();
-		
+				
 	}
 }

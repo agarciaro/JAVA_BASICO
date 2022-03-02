@@ -10,12 +10,12 @@ import org.springframework.stereotype.Repository;
 import com.sopra.spring.model.Fabricante;
 
 @Repository
-public class FabricanteRepository {
+public class FabricanteRepository implements IFabricanteRepository {
 	
 	@Autowired
 	NamedParameterJdbcTemplate namedJdbcTemplate;
 	
-	
+	@Override
 	public List<Fabricante> getAll(){
 		String sql = "SELECT * FROM FABRICANTE";
 		return namedJdbcTemplate.query(sql, new BeanPropertyRowMapper<Fabricante>(Fabricante.class));
