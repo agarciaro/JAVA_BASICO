@@ -29,4 +29,9 @@ public class HomeController {
 		
 		return "lista";
 	}
+	
+	@GetMapping("/maqueta")
+	public String maqueta() {
+		return "maquetacion";
+	}
 }

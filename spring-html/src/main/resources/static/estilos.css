@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+}
+
+header {
+	display: block;
+	background-color: #226af0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.section1 {
+	width: 80%;
+	background-color: #cccccc;
+	overflow: auto;
+	padding-top: 15px;
+	padding-bottom: 60px;
+	float: left;
+}
+
+aside {
+	float: right;
+	width: 19%;
+	border: 1px solid red;
+}
+
+footer {
+	color: #ffffff;
+	background-color: #226af0;
+	text-align: center;
+	height: 40px;
+	padding: 5px 0px;
+	clear: both;
+}
+
+figure {
+	display: table;
+	margin: 0 auto;
+}
