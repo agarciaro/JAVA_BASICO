@@ -1,4 +1,4 @@
-package com.sopra.spring;
+package com.sopra.spring.controller;
 
 import java.util.Arrays;
 import java.util.List;
@@ -23,6 +23,11 @@ public class HomeController {
 		return "home";
 	}
 	
+	@GetMapping("/articulos")
+	public String articulos(Model model) {
+		return "articulos/articulo";
+	}
+	
 	@GetMapping("/lista")
 	public String lista(Model model) {
 		model.addAttribute("colores", colores);
@@ -33,5 +38,10 @@ public class HomeController {
 	@GetMapping("/maqueta")
 	public String maqueta() {
 		return "maquetacion";
+	}
+	
+	@GetMapping("/javascript")
+	public String javascript() {
+		return "javascript";
 	}
 }

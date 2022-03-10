@@ -60,3 +60,9 @@ marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
 *.jar
 *.jar
 *.jar
+*.jar
+spring-project/employee-service/.factorypath
+*.lst
+spring-repositories/.mvn/wrapper/maven-wrapper.jar
+*.jar
+spring-project/database-service/.factorypath
