@@ -1,4 +1,4 @@
-package com.sopra.employee.controller;
+package com.sopra.report.controller;
 
 import java.util.List;
 
@@ -8,19 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sopra.employee.service.ICardService;
-import com.sopra.employee.service.IEmployeeService;
-import com.sopra.employee.service.IReportService;
-import com.sopra.model.employee.Card;
-import com.sopra.model.employee.Employee;
-import com.sopra.model.employee.Freelance;
-import com.sopra.model.employee.Internal;
 import com.sopra.model.report.Report;
+import com.sopra.report.service.IReportService;
 
 @RestController
 @RequestMapping("/api")

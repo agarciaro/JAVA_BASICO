@@ -1,4 +1,4 @@
-package com.sopra.employee.service;
+package com.sopra.report.service;
 
 import java.util.List;
 

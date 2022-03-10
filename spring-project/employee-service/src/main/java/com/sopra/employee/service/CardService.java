@@ -2,6 +2,7 @@ package com.sopra.employee.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.sopra.model.employee.Card;
@@ -10,7 +11,7 @@ import com.sopra.repository.CardRepository;
 import com.sopra.repository.EmployeeRepository;
 
 @Service
-@Transactional
+@Transactional(propagation = Propagation.REQUIRED)
 public class CardService implements ICardService {
 	
 	@Autowired
