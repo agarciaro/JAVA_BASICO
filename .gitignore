@@ -57,3 +57,8 @@ marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
 marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
 *.jar
 marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
+*.cmd
+spring-jpa/bin/.mvn/wrapper/maven-wrapper.jar
+spring-jpa/bin/.mvn/wrapper/maven-wrapper.jar
+spring-jpa/bin/mvnw
+spring-jpa/bin/.mvn/wrapper/maven-wrapper.jar
