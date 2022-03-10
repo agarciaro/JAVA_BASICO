@@ -15,34 +15,33 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.sopra.employee.service.ICardService;
 import com.sopra.employee.service.IEmployeeService;
+import com.sopra.employee.service.IReportService;
 import com.sopra.model.employee.Card;
 import com.sopra.model.employee.Employee;
 import com.sopra.model.employee.Freelance;
 import com.sopra.model.employee.Internal;
+import com.sopra.model.report.Report;
 
 @RestController
 @RequestMapping("/api")
-public class CardRestController {
+public class ReportRestController {
 	
 	@Autowired
-	private ICardService cardService;
+	private IReportService reportService;
 	
-	@Autowired
-	private IEmployeeService employeeService;
-	
-	@GetMapping("/cards")
-	public List<Card> findAllCards(){
+	@GetMapping("/reports")
+	public List<Report> findAllReports(){
 		return null;
 	}
 	
-	@PostMapping("/cards")
-	public Card insertCard(@Valid @RequestBody Card card) {
-		return (Card) cardService.insert(card); 
+	@GetMapping("/employees/{id}/reports")
+	public List<Report> findByEmployee(@PathVariable(name = "id") Long employeeId){
+		return reportService.findByEmployeeId(employeeId);
 	}
 	
-	@PutMapping("/employees/{idEmp}/cards/{idCrd}")
-	public Employee assignCard(@PathVariable(name = "idEmp") Long idEmployee, @PathVariable(name = "idCrd") Long idCard) {
-		return cardService.assignCard(idEmployee, idCard);
+	@PostMapping("/reports")
+	public Report insertReport(@Valid @RequestBody Report report) {
+		return reportService.insert(report); 
 	}
-	
+		
 }

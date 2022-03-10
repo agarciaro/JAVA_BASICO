@@ -2,6 +2,7 @@ package com.sopra.employee.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.sopra.model.employee.Employee;
 import com.sopra.model.employee.Freelance;
@@ -11,6 +12,7 @@ import com.sopra.repository.FreelanceRepository;
 import com.sopra.repository.InternalRepository;
 
 @Service
+@Transactional
 public class EmployeeService implements IEmployeeService {
 	
 //	@Autowired
@@ -33,11 +35,11 @@ public class EmployeeService implements IEmployeeService {
 		return employeeRepository.save(employee);
 	}
 
+	@Transactional(readOnly = true)
 	@Override
 	public Employee findById(Long id) {
 		return employeeRepository.findById(id).get();
 	}
-
 
 	@Override
 	public Employee update(Employee employee) {
