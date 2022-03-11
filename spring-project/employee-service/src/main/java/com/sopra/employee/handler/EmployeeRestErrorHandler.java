@@ -1,5 +1,7 @@
 package com.sopra.employee.handler;
 
+import org.hibernate.exception.ConstraintViolationException;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -20,6 +22,13 @@ public class EmployeeRestErrorHandler {
 	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
 	protected ErrorResponse handleHttpMessageNotReadableException(HttpMessageNotReadableException e) {
 		ErrorResponse error = new ErrorResponse(1, e.getMessage(), e.toString());
+		return error;
+	}
+	
+	@ExceptionHandler(value = {ConstraintViolationException.class, DataIntegrityViolationException.class})
+	@ResponseStatus(value = HttpStatus.BAD_REQUEST)
+	protected ErrorResponse handleConstraintViolationException(Exception e) {
+		ErrorResponse error = new ErrorResponse(2, e.getMessage(), e.toString());
 		return error;
 	}
 	

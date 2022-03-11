@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.sopra.employee.controller.EmployeeRestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.337 s <<< FAILURE! - in com.sopra.employee.controller.EmployeeRestControllerTest
+whenInsertFreelanceThenReturn_400  Time elapsed: 0.289 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.sopra.employee.controller.EmployeeRestControllerTest.whenInsertFreelanceThenReturn_400(EmployeeRestControllerTest.java:48)
+

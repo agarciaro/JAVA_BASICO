@@ -24,6 +24,11 @@ public class EmployeeRestController {
 	@Autowired
 	private IEmployeeService employeeService;
 	
+	@GetMapping("/employees")
+	public List<Employee> findAll(){
+		return employeeService.findAll();
+	}
+	
 	@GetMapping("/employees/{id}")
 	public Employee findEmployeeById(@PathVariable Long id){
 		return employeeService.findById(id);
