@@ -1,0 +1,42 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Mi primer HTML</title>
+	</head>
+	<body>
+		Hola <b>Mundo</b>!!!
+		<br/>
+		<a href="http://google.com"> Ir a Google</a>
+		<h1 id="encabezadoPrincipal" style="color:red;">Encabezado H1</h1>
+		<h2>Encabezado H2</h2>
+		<h3>Encabezado H3</h3>
+		<h4>Encabezado H4</h4>
+		<h5>Encabezado H5</h5>
+		<h6>Encabezado H6</h6>
+		
+		<img width="200px" alt="Muere Bart the Bear II" src="https://cnnespanol.cnn.com/wp-content/uploads/2021/11/oso-Bart.jpg?quality=100&strip=info&w=940&h=530&crop=1"/>
+		<center><p>Esto es un <em>párrafo</em> &#169; &percnt; &lt; &gt;
+		En el cual <b><i>yo</i> escribo lo que quiero</b>
+		</p></center>
+		<small>&#169; Aitor García</small>
+		<p>Deberías <em>siempre</em> validar tus etiquetas HTML</p>
+<!-- 		<menu label="Categorías" type="list"> -->
+<!-- 			<command type="radio" radiogroup="categorias" label="Romántica"> -->
+<!-- 			<command type="radio" radiogroup="categorias" label="Ciencia-Ficción"> -->
+<!-- 			<command type="radio" radiogroup="categorias" label="Aventura"> -->
+<!-- 		</menu> -->
+		<p th:text="${#dates.format(standardDate, 'dd-MM-yyyy HH:mm')}"></p>
+		<time datetime="2022">Año 2022</time>
+		
+		<figure>
+			<img alt="" width="300" src="https://cnnespanol.cnn.com/wp-content/uploads/2021/11/oso-Bart.jpg?quality=100&strip=info&w=940&h=530&crop=1"/>
+			<figcaption>Osso Grizzly mirando a la izquierda</figcaption>
+		</figure>
+		
+		<video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" width="400" height="300" controls="controls" autoplay="autoplay"></video>
+		
+		<div id="footer">Esto es el pie de página</div>
+	</body>
+</html>
