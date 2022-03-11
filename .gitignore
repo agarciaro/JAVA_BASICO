@@ -57,12 +57,7 @@ marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
 marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
 *.jar
 marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
-*.jar
-*.jar
-*.jar
-*.jar
-spring-project/employee-service/.factorypath
-*.lst
-spring-repositories/.mvn/wrapper/maven-wrapper.jar
-*.jar
-spring-project/database-service/.factorypath
+spring-jpa/bin/.mvn/wrapper/maven-wrapper.jar
+spring-jpa/bin/.mvn/wrapper/maven-wrapper.jar
+spring-jpa/bin/mvnw
+spring-jpa/bin/.mvn/wrapper/maven-wrapper.jar
