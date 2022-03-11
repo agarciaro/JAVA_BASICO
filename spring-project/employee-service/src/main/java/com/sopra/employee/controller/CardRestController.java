@@ -42,8 +42,7 @@ public class CardRestController {
 	
 	@PutMapping("/employees/{idEmp}/cards/{idCrd}")
 	public Employee assignCard(@PathVariable(name = "idEmp") Long idEmployee, @PathVariable(name = "idCrd") Long idCard) {
-		//TODO implementar
-		return null;
+		return cardService.assignCard(idEmployee, idCard);
 	}
 	
 }
