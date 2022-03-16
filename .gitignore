@@ -30,8 +30,6 @@ hs_err_pid*
 
 
 marco_rueda/PruebaBasedeDatos/.mvn/wrapper/maven-wrapper.jar
-*.xml
-*.properties
 marco_rueda/PruebaBasedeDatos/mvnw
 *.jar
 *.jar
